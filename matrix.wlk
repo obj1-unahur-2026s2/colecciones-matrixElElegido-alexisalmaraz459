@@ -85,9 +85,14 @@ object nave{
 //    pasajeros.forEach({p => p.saltar(metros/2)})
  
     method acelerar() {
-        
+        // [neo,trinity,morfeo]
+        // [trinity,morfeo]
 
+        pasajeros.filter({p => not p.esElElegido()}).forEach({p => p.saltar()})
 
-
-    }
+       // si no:
+       //  pasajeros.forEach({p => if(not p.esElElegido()){
+      //                                    p.saltar()
+      //                                  }
+}
 }
